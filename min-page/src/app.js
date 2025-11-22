@@ -177,5 +177,9 @@ cl5.addEventListener("click",function (){
 
 })
 
+rgba.addEventListener("click", function (){
+	acss2()
+	rgba.style.display = 'none'
+})
 
 /////////////heder//////////////////////////////////////////////////
