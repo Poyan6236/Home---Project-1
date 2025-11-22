@@ -183,3 +183,32 @@ rgba.addEventListener("click", function (){
 })
 
 /////////////heder//////////////////////////////////////////////////
+
+let imgId = document.getElementById('imgId')
+let close2 = document.getElementById('close')
+
+close2.addEventListener("click", function (){
+	imgId.style.transition = '0.7s'
+	imgId.style.transform = 'translateX(-50px)'
+	setTimeout(function (){
+		imgId.style.transform = 'translateX(300px)'
+	}, 500)
+
+	setTimeout(function (){
+		imgId.style.display = 'none'
+	}, 700)
+})
+
+window.addEventListener("load", function (){
+	this.setTimeout(function (){
+		imgId.style.transition = '0.7s'
+		imgId.style.display = 'block'
+		setTimeout(function (){
+			imgId.style.transform = 'translateX(-50px)'
+		},1)
+		setTimeout(function (){
+			imgId.style.transform = 'translateX(0px)'
+		},1050)
+	
+	}, 1000)
+})

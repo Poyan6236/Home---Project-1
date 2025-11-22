@@ -7,3 +7,12 @@
 #rgd-costom{
     color: #896700;
 }
+#close{
+    margin-right: 270px;
+    margin-top: 400px;
+}
+#imgId{
+    transform: translateX(300px);
+    display: none;
+    transition: 0.7s;
+}
