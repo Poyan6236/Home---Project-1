@@ -212,3 +212,37 @@ window.addEventListener("load", function (){
 	
 	}, 1000)
 })
+
+
+
+
+
+
+	
+
+
+		
+	
+
+
+
+
+
+
+let sn1 = document.getElementById('sn1')
+let sn2 = document.getElementById('sn2')
+let sn3 = document.getElementById('sn3')
+let sn4 = document.getElementById('sn4')
+let sn5 = document.getElementById('sn5')
+let sn6 = document.getElementById('sn6')
+let sn7 = document.getElementById('sn7')
+
+
+
+
+
+
+
+
+
+

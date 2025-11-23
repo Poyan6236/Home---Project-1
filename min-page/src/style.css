@@ -9,10 +9,54 @@
 }
 #close{
     margin-right: 270px;
-    margin-top: 400px;
+    margin-top: 442px;
 }
 #imgId{
     transform: translateX(300px);
     display: none;
     transition: 0.7s;
 }
+#imgId1{
+    margin-top: 430px;
+}
+.d{
+    margin-top: 500px;
+    position: absolute;
+}
+#cr{
+    color: #7c4dff;
+    font-family: BCOMSETB;
+    font-size: 50px;
+}
+#cr2{
+    font-size: 50px;
+    opacity: 1;
+}
+#d1{
+    font-size: 50px;
+}
+#d12{
+    margin-left: 330px;
+    
+}
+
+
+
+@layer utilities {
+  @keyframes fadeWords {
+    0%   { opacity: 0; transform: translateY(20px); }
+    10%  { opacity: 1; transform: translateY(0); }
+    20%  { opacity: 1; transform: translateY(0); }
+    30%  { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 0; transform: translateY(-20px); }
+  }
+  .animate-fadeWords {
+    animation: fadeWords 12s infinite;
+  }
+}
+
+
+
+
+
+  
