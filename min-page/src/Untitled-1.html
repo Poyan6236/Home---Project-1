@@ -1,0 +1,12 @@
+<img id="myImg" src="img1.jpg" width="200">
+
+<script>
+  const img = document.getElementById("myImg");
+  const sources = ["img1.jpg", "img2.jpg", "close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"];
+  let i = 0;
+
+  setInterval(() => {
+    i = (i + 1) % sources.length;
+    img.src = sources[i];
+  }, 1000); // هر ۱ ثانیه تغییر کند
+</script>

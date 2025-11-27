@@ -184,18 +184,30 @@ rgba.addEventListener("click", function (){
 
 /////////////heder//////////////////////////////////////////////////
 
-let imgId = document.getElementById('imgId')
+let imgId = document.getElementById('imgId1')
 let close2 = document.getElementById('close')
 
 close2.addEventListener("click", function (){
 	imgId.style.transition = '0.7s'
-	imgId.style.transform = 'translateX(-50px)'
+	imgId.style.transform = 'translateX(-50px) translateY(430px)'
 	setTimeout(function (){
-		imgId.style.transform = 'translateX(300px)'
+		imgId.style.transform = 'translateX(300px) translateY(430px)'
 	}, 500)
 
 	setTimeout(function (){
 		imgId.style.display = 'none'
+	}, 700)
+})
+
+close2.addEventListener("click", function (){
+	close2.style.transition = '0.7s'
+	close2.style.transform = 'translateX(-50px) translateY(440px)'
+	setTimeout(function (){
+		close2.style.transform = 'translateX(300px) translateY(440px)'
+	}, 500)
+
+	setTimeout(function (){
+		close2.style.display = 'none'
 	}, 700)
 })
 
@@ -204,45 +216,215 @@ window.addEventListener("load", function (){
 		imgId.style.transition = '0.7s'
 		imgId.style.display = 'block'
 		setTimeout(function (){
-			imgId.style.transform = 'translateX(-50px)'
+			imgId.style.transform = 'translateX(-50px) translateY(430px)'
 		},1)
 		setTimeout(function (){
-			imgId.style.transform = 'translateX(0px)'
+			imgId.style.transform = 'translateX(0px) translateY(430px)'
+		},1050)
+	
+	}, 1000)
+})
+
+window.addEventListener("load", function (){
+	this.setTimeout(function (){
+		close2.style.transition = '0.7s'
+		close2.style.display = 'block'
+		setTimeout(function (){
+			close2.style.transform = 'translateX(-50px) translateY(440px)'
+		},1)
+		setTimeout(function (){
+			close2.style.transform = 'translateX(0px) translateY(440px)'
 		},1050)
 	
 	}, 1000)
 })
 
 
+let imgChenghing = document.getElementById('imgChenghing')
+
+let id1 = document.getElementById('id1')
+let id2 = document.getElementById('id2')
+let id3 = document.getElementById('id3')
+let id4 = document.getElementById('id4')
+let id5 = document.getElementById('id5')
 
 
+function kolllop(){
+	id1.style.border = '0px solid'
+	id2.style.border = '0px solid'
+	id3.style.border = '0px solid'
+	id4.style.border = '0px solid'
+	id5.style.border = '0px solid'
+}
+
+
+
+function click313() {
+	kolllop()
+	id1.style.border = '1px solid #7c4dff'
+	imgChenghing.style.transition = '1s'
+	imgChenghing.style.opacity = '0'
+	setTimeout(function (){
+		imgChenghing.style.opacity = '1'
+		imgChenghing.setAttribute("src", "https://owj.io/wp-content/uploads/2025/11/Frame-2147226139.png")
+	},200)
+	console.log("ok");
+}
+
+function click314() {
+	kolllop()
+	id2.style.border = '1px solid #7c4dff'
+	imgChenghing.style.transition = '0.6s'
+	imgChenghing.style.opacity = '0'
+	setTimeout(function (){
+		imgChenghing.style.opacity = '1'
+		imgChenghing.setAttribute("src", "https://owj.io/wp-content/uploads/2025/11/Frame-2147226140.png")
+	},200)
+	console.log("ok");	
+	
+}
+
+function click315() {
+	kolllop()
+	id3.style.border = '1px solid #7c4dff'
+	imgChenghing.style.transition = '0.6s'
+	imgChenghing.style.opacity = '0'
+	setTimeout(function (){
+		imgChenghing.style.opacity = '1'
+		imgChenghing.setAttribute("src", "https://owj.io/wp-content/uploads/2025/11/Frame-2147226141.png")
+	},200)	
+	
+}
+
+function click316() {
+	kolllop()
+	id4.style.border = '1px solid #7c4dff'
+	imgChenghing.style.transition = '1s'
+	imgChenghing.style.opacity = '0'
+	setTimeout(function (){
+		imgChenghing.style.opacity = '1'
+		imgChenghing.setAttribute("src", "https://owj.io/wp-content/uploads/2025/11/Frame-2147226142.png")
+	},200)	
+}
+
+function click317() {
+	kolllop()
+	id5.style.border = '1px solid #7c4dff'
+	imgChenghing.style.transition = '1s'
+	imgChenghing.style.opacity = '0'
+	setTimeout(function (){
+		imgChenghing.style.opacity = '1'
+		imgChenghing.setAttribute("src", "https://owj.io/wp-content/uploads/2025/11/Frame-2147226143.png")
+	},200)	
+}
 
 
 	
 
 
+// setInterval(function (){
+// 	imgChenghing.setAttribute("src", "https://owj.io/wp-content/uploads/2025/11/Frame-2147226143.png")
+// 	imgChenghing.setAttribute("src", "https://owj.io/wp-content/uploads/2025/11/Frame-2147226139.png")
+// 	console.log("ok");
+// },1000)
+
+
+
+
+let index = 0
+
+
+setInterval(function () {
+  if (index === 0) {
+	kolllop()
+	id1.style.border = '1px solid #7c4dff'
+	imgChenghing.style.transition = '1s'
+	imgChenghing.style.opacity = '0'
+	setTimeout(function (){
+		imgChenghing.style.opacity = '1'
+		imgChenghing.setAttribute("src", "https://owj.io/wp-content/uploads/2025/11/Frame-2147226139.png")
+	},200)
+
+
+  } else if (index === 1 ) {
+	kolllop()
+	id2.style.border = '1px solid #7c4dff'
+	imgChenghing.style.transition = '0.6s'
+	imgChenghing.style.opacity = '0'
+	setTimeout(function (){
+		imgChenghing.style.opacity = '1'
+		imgChenghing.setAttribute("src", "https://owj.io/wp-content/uploads/2025/11/Frame-2147226140.png")
+	},200)
+  }
+
+  else if(index === 2){
+	kolllop()
+	id3.style.border = '1px solid #7c4dff'
+	imgChenghing.style.transition = '0.6s'
+	imgChenghing.style.opacity = '0'
+	setTimeout(function (){
+		imgChenghing.style.opacity = '1'
+		imgChenghing.setAttribute("src", "https://owj.io/wp-content/uploads/2025/11/Frame-2147226141.png")
+	},200)	
+  }
+
+  else if(index === 3){
+	kolllop()
+	id4.style.border = '1px solid #7c4dff'
+	imgChenghing.style.transition = '1s'
+	imgChenghing.style.opacity = '0'
+	setTimeout(function (){
+		imgChenghing.style.opacity = '1'
+		imgChenghing.setAttribute("src", "https://owj.io/wp-content/uploads/2025/11/Frame-2147226142.png")
+	},200)	
+  }
+
+
+  else if (index === 4){
+	kolllop()
+	id5.style.border = '1px solid #7c4dff'
+	imgChenghing.style.transition = '1s'
+	imgChenghing.style.opacity = '0'
+	setTimeout(function (){
+		imgChenghing.style.opacity = '1'
+		imgChenghing.setAttribute("src", "https://owj.io/wp-content/uploads/2025/11/Frame-2147226143.png")
+	},200)	
+  }
+
+  index++;
+  if (index > 4) index = 0;
+
+}, 3000);
+
+
+// let ani56 = document.getElementById('ani56')
+// let kop2 = document.getElementById('kop2')
+
+// let index1 =0
+
+
+
+// function hoverr(){
+
+// 	setInterval(function (){
+// 		if(index1=== 0){
+// 		ani56.style.transform = 'translateX(250px)'
+	
+// 		}
+// 		else if (index1 === 1){
+// 			ani56.style.transform = 'translateX(-250px)'
+// 		}
+// 		index1++
+// 		if (index1 > 1) index1 = 0;
+// 		console.log(index1);
 		
+// 	},2000)
+
+// }
+
+// function nothover() {
 	
-
-
-
-
-
-
-let sn1 = document.getElementById('sn1')
-let sn2 = document.getElementById('sn2')
-let sn3 = document.getElementById('sn3')
-let sn4 = document.getElementById('sn4')
-let sn5 = document.getElementById('sn5')
-let sn6 = document.getElementById('sn6')
-let sn7 = document.getElementById('sn7')
-
-
-
-
-
-
-
+// }
 
 
 
