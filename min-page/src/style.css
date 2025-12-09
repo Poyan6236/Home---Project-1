@@ -11,14 +11,12 @@
     color: #896700;
 }
 #close{
-    margin-right: 270px;
     z-index: 9999;
     transform: translateX(300px) translateY(440px);
     display: none;
     transition: 0.7s;
 }
 #imgId1{
-    transform: translateX(300px) translateY(430px);
     display: none;
     transition: 0.7s;
 }
@@ -29,17 +27,15 @@
 #cr{
     color: #7c4dff;
     font-family: BCOMSETB;
-    font-size: 50px;
 }
 #cr2{
-    font-size: 50px;
     opacity: 1;
 }
 #d20{
     font-size: 50px;
 }
 #d12{
-    margin-left: 330px;
+    margin-left: 330px; 
     z-index: 1;
     position: relative;
 }
@@ -61,9 +57,7 @@
 
 
 #text1{
-    font-size: 25px;
     color: rgb(82, 81, 81);
-    margin-left: 140px;
 }
 #child1{
     background-color: #8e66fd;
@@ -84,11 +78,20 @@
   #idimg2{
     transition: 0.6s;
   }
+  #idimg3{
+    transition: 0.6s;
+  }
   #ani56{
     transform: translateX(-200px);
 }
 #ani57{
   transform: translateX(-500px);
+}
+#idimg3{
+  transform: rotateZ(-5deg);
+}
+#kop5:hover #idimg3 {
+  transform: translateX(15px) rotateZ(5deg);
 }
 
 
@@ -117,8 +120,6 @@
 #kop2:hover #ani57{
   animation: rallslid2 6s infinite linear;
 }
-
-
 @keyframes scrollslid {
   0%{
     transform: translateY(0px);
@@ -127,19 +128,45 @@
     transform: translateY(0px);
   }
   30%{
-    transform: translateY(-50px);
+    transform: translateY(-50px);             
   }
   60%{
     transform: translateY(-50px);
   }
   80%{
-    transform: translateY(-100px);
+    transform: translateY(-90px);
   }
   100%{
-    transform: translateY(-100px);
+    transform: translateY(-90px);
   }
 }
 
 #kop4:hover #hedden {
   animation: scrollslid 3s infinite linear ;
+}
+#track{
+  transition: 0.6s;
+}
+#dd1,#dd2,#dd3,#dd4,#dd5{
+  border: solid black 1px;
+  transition: 0.6s;
+}
+#dd1{
+  background-color: black;
+  width: 20px;
+}
+.overflow-scroll{
+    height: 50px;
+    width: 350px;
+    overflow-x: scroll;
+    display: flex;
+}
+.rounded-full{
+  flex: 0 0 auto;
+}
+.svvg{
+  flex:  0 0 auto;
+}
+.flex{
+  flex:  0 0 auto;
 }
