@@ -592,103 +592,6 @@ idi4.addEventListener("click", function (){
  	}
  })
 
- let dd1 = document.getElementById("dd1")
- let dd2 = document.getElementById("dd2")
- let dd3 = document.getElementById("dd3")
- let dd4 = document.getElementById("dd4")
- let dd5 = document.getElementById("dd5")
-
- function accc(){
-	dd1.style.backgroundColor = '#fff'
-	dd2.style.backgroundColor = '#fff'
-	dd3.style.backgroundColor = '#fff'
-	dd4.style.backgroundColor = '#fff'
-	dd5.style.backgroundColor = '#fff'
-
-	dd1.style.width = '10px'
-	dd2.style.width = '10px'
-	dd3.style.width = '10px'
-	dd4.style.width = '10px'
-	dd5.style.width = '10px'
-
- }
-
- let track = document.getElementById('track')
-
-function track1(){
-	accc()
-	track.style.transform = 'translateX(-357px)'
-	dd2.style.backgroundColor = 'black'
-	dd2.style.width = '20px'
-}
-
-function track2(){
-	accc()
-	track.style.transform = 'translateX(-714px)'
-	dd3.style.backgroundColor = 'black'
-	dd3.style.width = '20px'
-}
-
-function track3(){
-	accc()
-	track.style.transform = 'translateX(-1070px)'
-	dd4.style.backgroundColor = 'black'
-	dd4.style.width = '20px'
-}
-
-
-function track4(){
-	accc()
-	track.style.transform = 'translateX(-1428px)'
-	dd5.style.backgroundColor = 'black'
-	dd5.style.width = '20px'
-}
-
-
-function track5(){
-	accc()
-	track.style.transform = 'translateX(-0px)'
-	dd1.style.backgroundColor = 'black'
-	dd1.style.width = '20px'
-}
-
-
-
-dd1.addEventListener('click' ,function (){
-	accc()
-	track.style.transform = 'translateX(-0px)'
-	dd1.style.backgroundColor = 'black'
-	dd1.style.width = '20px'
-})
-
-dd2.addEventListener('click' ,function (){
-	accc()
-	track.style.transform = 'translateX(-357px)'
-	dd2.style.backgroundColor = 'black'
-	dd2.style.width = '20px'
-})
-
-dd3.addEventListener('click' ,function (){
-	accc()
-	track.style.transform = 'translateX(-714px)'
-	dd3.style.backgroundColor = 'black'
-	dd3.style.width = '20px'
-})
-
-dd4.addEventListener('click' ,function (){
-	accc()
-	track.style.transform = 'translateX(-1070px)'
-	dd4.style.backgroundColor = 'black'
-	dd4.style.width = '20px'
-})
-
-dd5.addEventListener('click' ,function (){
-	accc()
-	track.style.transform = 'translateX(-1428px)'
-	dd5.style.backgroundColor = 'black'
-	dd5.style.width = '20px'
-})
-
 // idi1.addEventListener("click", function (){
 // 	if(ft2){
 // 		trans1.style.transform = 'rotateZ(180deg)'
@@ -1054,3 +957,167 @@ dd5.addEventListener('click' ,function (){
 // })
 
 //////////////////////////////////////////////////////////////////////
+ let dd1 = document.getElementById("dd1")
+ let dd2 = document.getElementById("dd2")
+ let dd3 = document.getElementById("dd3")
+ let dd4 = document.getElementById("dd4")
+ let dd5 = document.getElementById("dd5")
+
+ function accc(){
+	dd1.style.backgroundColor = '#fff'
+	dd2.style.backgroundColor = '#fff'
+	dd3.style.backgroundColor = '#fff'
+	dd4.style.backgroundColor = '#fff'
+	dd5.style.backgroundColor = '#fff'
+
+	dd1.style.width = '10px'
+	dd2.style.width = '10px'
+	dd3.style.width = '10px'
+	dd4.style.width = '10px'
+	dd5.style.width = '10px'
+
+ }
+
+ let track = document.getElementById('track')
+ let track111 = document.getElementById('track111')
+ let track222 = document.getElementById('track222')
+
+
+
+function track1(){
+	accc()
+	track.style.transform = 'translateX(-357px)'
+	dd2.style.backgroundColor = 'black'
+	dd2.style.width = '20px'
+	track.style.transition = '0.6s'
+}
+
+function track2(){
+	accc()
+	track.style.transform = 'translateX(-714px)'
+	dd3.style.backgroundColor = 'black'
+	dd3.style.width = '20px'
+}
+
+function track3(){
+	accc()
+	track.style.transform = 'translateX(-1070px)'
+	dd4.style.backgroundColor = 'black'
+	dd4.style.width = '20px'
+}
+
+
+function track4(){
+	accc()
+	track.style.transform = 'translateX(-1428px)'
+	dd5.style.backgroundColor = 'black'
+	dd5.style.width = '20px'
+}
+
+
+function track5(){
+	accc()
+	track.style.transform = 'translateX(-0px)'
+	dd1.style.backgroundColor = 'black'
+	dd1.style.width = '20px'
+}
+
+
+
+dd1.addEventListener('click' ,function (){
+	accc()
+	track.style.transform = 'translateX(-0px)'
+	dd1.style.backgroundColor = 'black'
+	dd1.style.width = '20px'
+})
+
+dd2.addEventListener('click' ,function (){
+	accc()
+	track.style.transform = 'translateX(-357px)'
+	dd2.style.backgroundColor = 'black'
+	dd2.style.width = '20px'
+})
+
+dd3.addEventListener('click' ,function (){
+	accc()
+	track.style.transform = 'translateX(-714px)'
+	dd3.style.backgroundColor = 'black'
+	dd3.style.width = '20px'
+})
+
+dd4.addEventListener('click' ,function (){
+	accc()
+	track.style.transform = 'translateX(-1070px)'
+	dd4.style.backgroundColor = 'black'
+	dd4.style.width = '20px'
+})
+
+dd5.addEventListener('click' ,function (){
+	accc()
+	track.style.transform = 'translateX(-1428px)'
+	dd5.style.backgroundColor = 'black'
+	dd5.style.width = '20px'
+})
+let clossssg = document.getElementById('clossssg')
+let liyyy1 =document.getElementById('liyyy1')
+let  block = document.getElementById('block')
+block.addEventListener("click", function (){
+	liyyy1.style.display = 'block'
+	block.style.display = 'none'
+	clossssg.style.display = 'block'
+})
+clossssg.addEventListener("click", function (){
+	liyyy1.style.display = 'none'
+	block.style.display = 'block'
+	clossssg.style.display = 'none'
+})
+
+
+
+
+
+
+
+
+
+	
+function track6(){
+	accc()
+	track111.style.transform = 'translateX(-99%)'
+	dd2.style.backgroundColor = 'black'
+	dd2.style.width = '20px'
+}
+
+function track7(){
+	accc()
+	track111.style.transform = 'translateX(-199%)'
+	dd3.style.backgroundColor = 'black'
+	dd3.style.width = '20px'
+}
+
+function track8(){
+	accc()
+	track111.style.transform = 'translateX(-299%)'
+	dd4.style.backgroundColor = 'black'
+	dd4.style.width = '20px'
+}
+
+
+function track9(){
+	accc()
+	track111.style.transform = 'translateX(-399%)'
+	dd5.style.backgroundColor = 'black'
+	dd5.style.width = '20px'
+}
+
+
+function track10(){
+	accc()
+	track111.style.transform = 'translateX(-0px)'
+	dd1.style.backgroundColor = 'black'
+	dd1.style.width = '20px'
+}
+
+
+
+/////////////////////////////////////////////////
